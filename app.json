@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "one-room",
+    "slug": "one-room",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "one-room"
+}
