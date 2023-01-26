@@ -7,26 +7,15 @@
 // eslint-disable-next-line prettier/prettier
 
 import React from 'react';
-import type { PropsWithChildren } from 'react';
-import { SvgUri } from 'react-native-svg';
 import {
-  Image,
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
   View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import SVGImg from './assets/icons/logo.svg'
+import SplachScreen from './assets/icons/splashscreen.svg'
 
 
 
@@ -37,10 +26,8 @@ function App() {
     }>
       <StatusBar hidden={true}></StatusBar>
       < View style={styles.sectionContainer} >
-        <Image
-          style={styles.logo}
-          source={require('./assets/logo.png')}
-        />
+        <SVGImg width={100} height={100} />
+        <SplachScreen />
       </View >
     </SafeAreaView >
   )
@@ -52,7 +39,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#E95228',
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    rowGap: 30
 
   },
   statusbarcolor: {
