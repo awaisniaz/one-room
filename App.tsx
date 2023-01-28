@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    rowGap: 30
+    rowGap: 50
 
   },
   statusbarcolor: {
